@@ -151,25 +151,25 @@ $ cargo build --release
 <p>To start running a Conflux full node, you can follow the instructions at <a href="../get_started/#running-conflux-full-node">Running Conflux Full Node</a>.</p>
 <h2 id="install-test-dependencies">Install Test Dependencies<a class="headerlink" href="#install-test-dependencies" title="Permanent link">&para;</a></h2>
 <p>We have a test framework written in Python3 (version&gt;=3.6). Required packages can be installed by running</p>
-<pre><code class="bash">$ ./test/dev-support/dep_pip3.sh
+<pre><code class="bash">$ ./dev-support/dep_pip3.sh
 </code></pre>
 
 <p>Solidity compiler <code>solc</code> is also required, and be installed as follows:</p>
 <ul>
 <li>
 <p>Ubuntu</p>
-<p><code>bash
-sudo add-apt-repository ppa:ethereum/ethereum
+<pre><code>sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
-sudo apt-get install solc</code></p>
+sudo apt-get install solc
+</code></pre>
 </li>
 <li>
 <p>OSX</p>
-<p><code>bash
-brew update
+<pre><code>brew update
 brew upgrade
 brew tap ethereum/ethereum
-brew install solidity</code></p>
+brew install solidity
+</code></pre>
 </li>
 <li>
 <p>Others</p>

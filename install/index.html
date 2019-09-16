@@ -95,23 +95,23 @@
 <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
 <p>Here is a step by step guide on how to build Conflux from the source code and get a node running.</p>
 <h2 id="install-build-dependencies">Install Build Dependencies<a class="headerlink" href="#install-build-dependencies" title="Permanent link">&para;</a></h2>
-<p>Conflux requires <strong>latest stable Rust version</strong> and <code>clang</code> to build.</p>
+<p>Conflux requires <strong>latest stable Rust version</strong>,  <code>clang</code>, and <code>sqlite</code> to build.</p>
 <p>We recommend installing Rust through <a href="https://www.rustup.rs/">rustup</a>. If you don't already have <code>rustup</code> or <code>clang</code>, you can install them like this:</p>
 <ul>
 <li>
 <p>Linux:</p>
 <pre><code>$ curl https://sh.rustup.rs -sSf | sh
 </code></pre>
-<p><code>clang</code> can be installed with:</p>
+<p><code>clang</code> and <code>sqlite</code> can be installed with:</p>
 <ul>
 <li>
 <p>Ubuntu:</p>
-<pre><code>$ sudo apt-get install clang
+<pre><code>$ sudo apt-get install clang libsqlite3-dev
 </code></pre>
 </li>
 <li>
 <p>CentOS / RHEL: </p>
-<pre><code>$ sudo yum install clang
+<pre><code>$ sudo yum install clang sqlite-devel
 </code></pre>
 </li>
 </ul>
@@ -141,7 +141,7 @@
 <pre><code class="bash"># download Conflux code
 $ git clone https://github.com/Conflux-Chain/conflux-rust
 $ cd conflux-rust
-$ git checkout v0.1.1
+$ git checkout v0.1.7
 
 
 # build in release mode
